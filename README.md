@@ -5,6 +5,8 @@ OBS　LED CLOCK
 
 一个OBS实时显示当前时间的LED时钟插件
 
+
+
 安装：
 
 1.复制led-clock文件夹和文件 led-clock.lua 到 OBS 脚本目录：
@@ -19,3 +21,5 @@ C:\Program Files (x86)\obs-studio\data\obs-plugins\frontend-tools\scripts
 
 QQ:2604904
 
+
+![效果预览](https://github.com/lulersoft/obs_led_clock/blob/master/led_screen.jpg)
