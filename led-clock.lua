@@ -80,8 +80,8 @@ source_def.video_render = function(data, effect)
 
 	local time = os.date("*t")
 	local seconds = time.sec
-	local mins = time.min + seconds / 60.0;
-	local hours = time.hour + (mins * 60.0) / 3600.0;
+	local mins = time.min
+	local hours = time.hour
 
 	effect = obs.obs_get_base_effect(obs.OBS_EFFECT_DEFAULT)
 
