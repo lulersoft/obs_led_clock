@@ -24,13 +24,15 @@ email:2604904
 2023.09.21 添加可选字体颜色共4种。
 选择颜色：点击 菜单 “工具”-》“脚本”-》led-clock.lua ，看右侧属性面板 style选择：red 红色字体，green 绿色字体 blue 蓝色字体，yellow 黄色字体
 
-![效果预览](https://github.com/lulersoft/obs_led_clock/blob/master/screen_shot/3.jpg)
+![效果预览](https://github.com/lulersoft/obs_led_clock/blob/master/screen_shot/3.png)
 
 ![效果预览](https://github.com/lulersoft/obs_led_clock/blob/master/led_screen.jpg)
 
-![效果预览](https://github.com/lulersoft/obs_led_clock/blob/master/screen_shot/1.jpg)
+![效果预览](https://github.com/lulersoft/obs_led_clock/blob/master/screen_shot/1.png)
 
-![效果预览](https://github.com/lulersoft/obs_led_clock/blob/master/screen_shot/2.jpg)
+![效果预览](https://github.com/lulersoft/obs_led_clock/blob/master/screen_shot/2.png)
+
+![效果预览](https://github.com/lulersoft/obs_led_clock/blob/master/screen_shot/4.png)
 
 ![红色字体](https://github.com/lulersoft/obs_led_clock/blob/master/led-clock/red/led.png)
 
