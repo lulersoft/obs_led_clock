@@ -1,25 +1,33 @@
 # obs_led_clock
 a led clock  plugin for obs
 
-OBS¡¡LED CLOCK
+OBSã€€LED CLOCK
 
-Ò»¸öOBSÊµÊ±ÏÔÊ¾µ±Ç°Ê±¼äµÄLEDÊ±ÖÓ²å¼ş
-
-
-
-°²×°£º
-
-1.¸´ÖÆled-clockÎÄ¼ş¼ĞºÍÎÄ¼ş led-clock.lua µ½ OBS ½Å±¾Ä¿Â¼£º
-
-C:\Program Files (x86)\obs-studio\data\obs-plugins\frontend-tools\scripts
-
-2.´ò¿ªOBS£¬²Ëµ¥ ¡°¹¤¾ß¡±-¡·¡°½Å±¾¡±£¬µã»÷ÓÒÏÂµÄ¡°+¡±°´Å¥£¬¼ÓÔØ led-clock.lua
-
-3.ÔÚOBS³¡¾° Ìí¼ÓÀ´Ô´ LED Clock,È·¶¨¼´¿É¡£
-
-µ±Ç°²âÊÔOBS°æ±¾Îª 23.0.2 Ê¹ÓÃÍ¨¹ı
-
-QQ:2604904
+ä¸€ä¸ªOBSå®æ—¶æ˜¾ç¤ºå½“å‰æ—¶é—´çš„LEDæ—¶é’Ÿæ’ä»¶
 
 
-![Ğ§¹ûÔ¤ÀÀ](https://github.com/lulersoft/obs_led_clock/blob/master/led_screen.jpg)
+
+å®‰è£…ï¼š
+
+1.å¤åˆ¶led-clockæ–‡ä»¶å¤¹å’Œæ–‡ä»¶ led-clock.lua åˆ° OBS è„šæœ¬ç›®å½•(å…·ä½“çœ‹è‡ªå·±çš„å®‰è£…ç›®å½•)ï¼š
+
+D:\Program Files\obs-studio\data\obs-plugins\frontend-tools\scripts
+
+2.æ‰“å¼€OBSï¼Œèœå• â€œå·¥å…·â€-ã€‹â€œè„šæœ¬â€ï¼Œç‚¹å‡»å³ä¸‹çš„â€œ+â€æŒ‰é’®ï¼ŒåŠ è½½ led-clock.lua
+
+3.åœ¨OBSåœºæ™¯ æ·»åŠ æ¥æº LED Clock,ç¡®å®šå³å¯ã€‚
+
+å½“å‰æµ‹è¯•OBSç‰ˆæœ¬ä¸º 29.1.3 ä½¿ç”¨é€šè¿‡
+
+email:2604904
+
+2023.09.21 æ·»åŠ å¯é€‰å­—ä½“é¢œè‰²å…±4ç§ã€‚
+é€‰æ‹©é¢œè‰²ï¼šç‚¹å‡» èœå• â€œå·¥å…·â€-ã€‹â€œè„šæœ¬â€-ã€‹led-clock.lua ï¼Œçœ‹å³ä¾§å±æ€§é¢æ¿ styleé€‰æ‹©ï¼šred çº¢è‰²å­—ä½“ï¼Œgreen ç»¿è‰²å­—ä½“ blue è“è‰²å­—ä½“ï¼Œyellow é»„è‰²å­—ä½“
+
+
+![æ•ˆæœé¢„è§ˆ](https://github.com/lulersoft/obs_led_clock/blob/master/led_screen.jpg)
+
+![çº¢è‰²å­—ä½“](https://github.com/lulersoft/obs_led_clock/blob/master/led-clock/red/led.png)
+![è“è‰²å­—ä½“](https://github.com/lulersoft/obs_led_clock/blob/master/led-clock/blue/led.png)
+![ç»¿è‰²å­—ä½“](https://github.com/lulersoft/obs_led_clock/blob/master/led-clock/green/led.png)
+![é»„è‰²å­—ä½“](https://github.com/lulersoft/obs_led_clock/blob/master/led-clock/yellow/led.png)

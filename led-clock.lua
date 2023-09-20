@@ -5,6 +5,8 @@ source_def = {}
 source_def.id = "lua_led_clock"
 source_def.output_flags = bit.bor(obs.OBS_SOURCE_VIDEO, obs.OBS_SOURCE_CUSTOM_DRAW)
 
+style="green"
+
 function image_source_load(image, file)
 	obs.obs_enter_graphics();
 	obs.gs_image_file_free(image);
@@ -41,17 +43,17 @@ source_def.create = function(source, settings)
 	data.n = obs.gs_image_file()
 
 
-	image_source_load(data.n0, script_path() .. "led-clock/n0.png")
-	image_source_load(data.n1, script_path() .. "led-clock/n1.png")
-	image_source_load(data.n2, script_path() .. "led-clock/n2.png")
-	image_source_load(data.n3, script_path() .. "led-clock/n3.png")
-	image_source_load(data.n4, script_path() .. "led-clock/n4.png")
-	image_source_load(data.n5, script_path() .. "led-clock/n5.png")
-	image_source_load(data.n6, script_path() .. "led-clock/n6.png")
-	image_source_load(data.n7, script_path() .. "led-clock/n7.png")
-	image_source_load(data.n8, script_path() .. "led-clock/n8.png")
-	image_source_load(data.n9, script_path() .. "led-clock/n9.png")
-	image_source_load(data.n, script_path() .. "led-clock/n.png")
+	image_source_load(data.n0, script_path() .. "led-clock/"..style.."/n0.png")
+	image_source_load(data.n1, script_path() .. "led-clock/"..style.."/n1.png")
+	image_source_load(data.n2, script_path() .. "led-clock/"..style.."/n2.png")
+	image_source_load(data.n3, script_path() .. "led-clock/"..style.."/n3.png")
+	image_source_load(data.n4, script_path() .. "led-clock/"..style.."/n4.png")
+	image_source_load(data.n5, script_path() .. "led-clock/"..style.."/n5.png")
+	image_source_load(data.n6, script_path() .. "led-clock/"..style.."/n6.png")
+	image_source_load(data.n7, script_path() .. "led-clock/"..style.."/n7.png")
+	image_source_load(data.n8, script_path() .. "led-clock/"..style.."/n8.png")
+	image_source_load(data.n9, script_path() .. "led-clock/"..style.."/n9.png")
+	image_source_load(data.n, script_path() .. "led-clock/"..style.."/n.png")
 
 	return data
 end
@@ -176,6 +178,35 @@ end
 
 function script_description()
 	return "obs led clock QQ:2604904"
+end
+
+function script_description()
+	return "obs led clock\n数字时钟\nemail: 2604904@qq.com"
+end
+
+function script_properties()
+	local props = obs.obs_properties_create()
+
+	local p = obs.obs_properties_add_list(props, "style", "style", obs.OBS_COMBO_TYPE_EDITABLE, obs.OBS_COMBO_FORMAT_STRING)
+	local style_arr ={"red","green","blue","yellow"}
+
+	for _, name in ipairs(style_arr) do				
+		obs.obs_property_list_add_string(p, name, name)	
+	end
+
+	return props
+end
+
+function script_load(settings)	
+	style = obs.obs_data_get_string(settings, "style")	
+end
+
+function script_update(settings)	
+	style = obs.obs_data_get_string(settings, "style")	
+end
+
+function script_defaults(settings)
+	obs.obs_data_set_default_string(settings, "style", "green")
 end
 
 obs.obs_register_source(source_def)
